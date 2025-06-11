@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.neon-flicker {
+  color: #fff;
+  text-shadow:
+    0 0 8px #fff,
+    0 0 16px #00eaff,
+    0 0 24px #00eaff,
+    0 0 32px #00eaff;
+  animation: neon-flicker 2.5s infinite alternate;
+}
+@keyframes neon-flicker {
+  0%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 8px #fff,
+      0 0 16px #00eaff,
+      0 0 24px #00eaff,
+      0 0 32px #00eaff;
+  }
+  92% {
+    opacity: 0.85;
+    text-shadow:
+      0 0 6px #fff,
+      0 0 12px #00eaff,
+      0 0 18px #00eaff,
+      0 0 24px #00eaff;
+  }
+  95% {
+    opacity: 0.7;
+    text-shadow:
+      0 0 2px #fff,
+      0 0 4px #00eaff,
+      0 0 6px #00eaff,
+      0 0 8px #00eaff;
+  }
+  97% {
+    opacity: 0.9;
+    text-shadow:
+      0 0 8px #fff,
+      0 0 16px #00eaff,
+      0 0 24px #00eaff,
+      0 0 32px #00eaff;
+  }
+}
