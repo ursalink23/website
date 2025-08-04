@@ -1,5 +1,5 @@
 'use client';
-import { Code, Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, MapPin, Github, Linkedin, Twitter } from "lucide-react";
 import { MouseEvent } from "react";
 
 export const Footer = () => {

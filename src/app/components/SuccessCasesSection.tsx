@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/app/components/ui/card";
 import { Button } from "@/app/components/ui/button";
 import { ExternalLink, ArrowRight } from "lucide-react";
 import { ParallaxSection } from "./ParallaxSection";

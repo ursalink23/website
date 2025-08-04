@@ -3,8 +3,6 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
 
-import logoImage from "@/app/assets/logo_ursalink.svg";
-
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);

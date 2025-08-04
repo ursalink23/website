@@ -38,7 +38,7 @@ export const ContactForm = () => {
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID);
       toast.success("¡Mensaje enviado correctamente! Te contactaremos pronto.");
       setFormData({ name: "", email: "", company: "", message: "" });
-    } catch (error) {
+    } catch {
       toast.error("Hubo un error al enviar el mensaje. Intenta nuevamente.");
     } finally {
       setIsSubmitting(false);
