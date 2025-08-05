@@ -84,8 +84,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
-      - name: Add env
-        run: echo "var env ${{ vars.NEXT_PUBLIC_EMAILJS_SERVICE_ID }} >>"
 
   # Deployment job
   deploy:
