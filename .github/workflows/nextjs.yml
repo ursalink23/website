@@ -85,7 +85,7 @@ jobs:
         with:
           path: ./out
       - name: Add env
-        run: echo "var env ${{ NEXT_PUBLIC_EMAILJS_SERVICE_ID }}"
+        run: echo "var env ${{ secrets.NEXT_PUBLIC_EMAILJS_SERVICE_ID }}"
 
   # Deployment job
   deploy:
