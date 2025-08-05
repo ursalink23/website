@@ -36,7 +36,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Access env
-        run: echo "ENV is ${{ vars.NEXT_PUBLIC_EMAILJS_SERVICE_ID }}"
+        run: echo "ENV is ${{ github-pages.vars.NEXT_PUBLIC_EMAILJS_SERVICE_ID }}"
       - name: Detect package manager
         id: detect-package-manager
         run: |
